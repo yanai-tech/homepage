@@ -1,0 +1,35 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin:20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+
+header, footer {
+  text-align: center;
+  background-color: #9cc4c9;
+  
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 5px;
+  color: #333;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+#priceTable {
+  margin: 0 auto; /* 左右自動で中央寄せ */
+}
+
+#priceTable th,
+#priceTable td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: center;     /* 文字を中央揃え */
+}
+

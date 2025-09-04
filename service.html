@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サービス料金 - 谷内テック</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<main>
+
+  <h2>サービス一覧</h2>
+
+  <table id="priceTable" border="1">
+  <tr>
+    <th>サービス名</th>
+    <th>価格</th>
+  </tr>
+  <tr>
+    <td>ダビング作業（1本,出張費込み）</td>
+    <td>2,500円</td>
+  </tr>
+  <tr>
+    <td>ダビング作業（2本目以降）</td>
+    <td>1本あたり 1,500円</td>
+  </tr>
+  <tr>
+    <td>テープ補修：テープ切れ</td>
+    <td>1本あたり 1,200円</td>
+  </tr>
+  <tr>
+    <td>テープ補修：カビ取り,分解洗浄等</td>
+    <td>1本あたり 4,000円</td>
+  </tr>
+  <tr>
+    <td>記録媒体（USB）</td>
+    <td>※参考価格 32GB 2,500円～</td>
+  </tr>
+
+</table>
+<p>ー　サービスについて　ー</p>
+
+<p>・テープ時間長さによる料金加算はございません。</p>
+<p>・映画・テレビ番組・市販ビデオソフト等、著作権法で複製が禁止されている映像は、<br>
+  　本サービスの対象外とします。</p>
+
+<p>・納品はDVD（MPEG-2）で行いますが、希望があればデータ（MP4）渡しも可能です。<br>
+  　※容量に応じて料金変動します。<br>
+  　お客さま自身でご用意される場合も対応可能ですので、ご相談ください。</p>
+
+<p>・表に掲載していないことも内容によっては対応可能の場合がございます。<br>
+  　お気軽にお問合せください。
+</p>
+
+</main>
+
+<div id="footer"></div>
+
+<script>
+  fetch("header.html").then(res => res.text()).then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+  fetch("footer.html").then(res => res.text()).then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>

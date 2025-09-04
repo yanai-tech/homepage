@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>連絡先- 谷内テック</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<main>
+
+  <h3>連絡先</h3>
+  <p>★営業時間 ：月～金　9:00～17:00　土日祝：終日休業</p>
+  <p>★電話番号 ：0166-73-7263</p>
+  <p>★Email　 ：yanai.tech.1991@gmail.com</p>
+  <p>★担当者名 ：箭内　寿之（やない　としゆき）</p>
+
+</main>
+
+<div id="footer"></div>
+
+<script>
+  fetch("header.html").then(res => res.text()).then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+  fetch("footer.html").then(res => res.text()).then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>
