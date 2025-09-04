@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ホーム - 谷内テック</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ヘッダー読込 -->
+<div id="header"></div>
+
+<main>
+
+  <h3>- VHS-ダビングサービス -</h3>
+  <p>・VHS、DV、miniDVビデオが見られなくなる前に、DVD/データ化しませんか？</p>
+  <img src="dabingu.png" alt="イラスト1" width=240 height=160>
+  <h3>- お客様のご自宅まで伺います -</h3>
+  <p>・電話/メール連絡でご自宅まで伺い、テープ受け取り/納品いたします</p>
+  <img src="denwa.png" alt="イラスト2" width=240 height=160>
+  <h3>- 見積以上の追加費用は頂きません。 -</h3>
+  <p>・作業お見積りもその場で提示します。</p>
+  <p>※テープ状態により作業不可だった場合、その分の料金はいただきません。</p>
+  <img src="hiyou.png" alt="イラスト3" width=240 height=160>
+
+  <p></p>
+  <a href="service.html">⇒サービス料金を見る</a><br>
+  <a href="renraku.html">⇒連絡先はこちら</a>
+
+</main>
+
+<!-- フッター読込 -->
+<div id="footer"></div>
+ </div>
+
+<script>
+  // ヘッダー読み込み
+  fetch("header.html").then(res => res.text()).then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+  // フッター読み込み
+  fetch("footer.html").then(res => res.text()).then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+<script>
+  // ボタンとテーブルを取得
+  const toggleBtn = document.getElementById("toggleTable");
+  const priceTable = document.getElementById("priceTable");
+
+  // ボタンがクリックされたら
+  toggleBtn.addEventListener("click", function() {
+    // テーブルの表示/非表示を切り替える
+    if (priceTable.style.display === "none") {
+      priceTable.style.display = "table";
+    } else {
+      priceTable.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
+
