@@ -12,48 +12,87 @@
 
 <main>
 
-  <h2>サービス一覧</h2>
+  <h2>【 納品までの流れ 】</h2>
+<!-- ここより上は既存（サービス一覧やリンクなど） -->
 
-  <table id="priceTable" border="1">
-  <tr>
-    <th>サービス名</th>
-    <th>価格（税込）</th>
-  </tr>
-  <tr>
-    <td>ダビング作業（1本,出張費込み）</td>
-    <td>2,500円</td>
-  </tr>
-  <tr>
-    <td>ダビング作業（2本目以降）</td>
-    <td>1本あたり 1,500円</td>
-  </tr>
-  <tr>
-    <td>テープ補修：テープ切れ</td>
-    <td>1本あたり 1,200円</td>
-  </tr>
-  <tr>
-    <td>テープ補修：カビ取り,分解洗浄等</td>
-    <td>1本あたり 4,000円</td>
-  </tr>
-  <tr>
-    <td>記録媒体（USB）</td>
-    <td>※参考価格 32GB 2,000円～</td>
-  </tr>
+<hr>
 
-</table>
-<p>ー　サービスについて　ー</p>
+<section class="flow-wrap" aria-label="相談・作業・納品の流れ">
 
-<p>・テープ時間長さによる料金加算はございません。</p>
-<p>・映画・テレビ番組・市販ビデオソフト等、著作権法で複製が禁止されている映像は、<br>
-  　本サービスの対象外とします。</p>
+  <div class="flow-grid">
+    <!-- 相談・見積 -->
+    <article class="flow-card">
+      <h3>相談・見積</h3>
+      <img src="hiyou.png" alt="見積り提示のイメージ" width="240" height="160" loading="lazy">
+      <p>〇お電話や訪問で要件を伺い、お客さまの希望や環境にあったご提案をいたします。</p>
+      <p>・手持ちの再生機で見られるようにしたい</p>
+      <p>・映像の保存だけでもしたい</p>
+      <p>・TVで見られる形にしてほしい …など</p>
+      </ul>
+    </article>
 
-<p>・納品はDVD（MPEG-2）で行いますが、希望があればデータ（MP4）渡しも可能です。<br>
-  　※容量に応じて料金変動します。<br>
-  　お客さま自身でご用意される場合も対応可能ですので、ご相談ください。</p>
+    <!-- 矢印 -->
+    <div class="flow-arrow">
+  <svg viewBox="0 0 120 44" width="100%" height="44" aria-hidden="true">
+    <line x1="4" y1="22" x2="104" y2="22"
+          stroke="#0ea5e9" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="120,22 96,10 96,34" fill="#0ea5e9"/>
+  </svg>
+</div>
 
-<p>・表に掲載していないことも内容によっては対応可能の場合がございます。<br>
-  　お気軽にお問合せください。
-</p>
+
+    <!-- 作業・受取配送 -->
+    <article class="flow-card">
+      <h3>作業・受取配送</h3>
+      <img src="dabing.png" alt="VHSダビングのイメージ" width="140" height="140" loading="lazy">
+      <img src="dabing_keitai.png" alt="ガラケーダビングのイメージ" width="140" height="140" loading="lazy">
+      <p>〇必要なテープや機器はご自宅まで回収し、一度お預かり。作業完了後に返却いたします（※旭川市内限定）。</p>
+    </article>
+
+    <!-- 矢印 -->
+    <div class="flow-arrow">
+  <svg viewBox="0 0 120 44" width="100%" height="44" aria-hidden="true">
+    <line x1="4" y1="22" x2="104" y2="22"
+          stroke="#0ea5e9" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="120,22 96,10 96,34" fill="#0ea5e9"/>
+  </svg>
+</div>
+
+
+    <!-- 納品 -->
+    <article class="flow-card">
+      <h3>納品</h3>
+      <img src="dvd.png" alt="dvdのイメージ" width="80" height="80" loading="lazy">
+      <img src="usb.png" alt="USBのイメージ" width="80" height="80" loading="lazy">
+      <img src="sd.png" alt="SDのイメージ" width="80" height="80" loading="lazy">
+      <p>〇基本はDVD-Rでの納品ですが、他形式も可能です。<br>
+        <small>※ご希望の形式がある場合はご相談ください。</small></p>
+    </article>
+  </div>
+
+  <!-- 納品 → オプション（下向き） -->
+  <!-- ↓ 破線の下矢印 -->
+<div class="flow-arrow-down">
+  <svg viewBox="0 0 60 120" width="60" height="80" aria-hidden="true">
+    <!-- 線を破線にする -->
+    <line x1="30" y1="6" x2="30" y2="100"
+          stroke="#000000" stroke-width="8"
+          stroke-linecap="round"
+          stroke-dasharray="10 8"/>
+    <!-- 矢じり（三角形）は塗りつぶしのまま -->
+    <polygon points="30,120 16,96 44,96" fill="#000000"/>
+  </svg>
+</div>
+
+  <!-- オプション -->
+  <article class="flow-card flow-option">
+    <h3>※オプション</h3>
+    <img src="sapo-to.png" alt="サポートのイメージ" width="140" height="140" loading="lazy">
+    <img src="hosyu.png" alt="補修のイメージ" width="100" height="140" loading="lazy">
+    <p>〇再生機器の購入やTV接続、機器の使い方説明、テープ補修などの各種オプションもございます。</p>
+    <p>〇サービス一覧にないことも、内容によってご対応可能の場合もございます。お気軽にご相談ください。</p>
+  </article>
+</section>
 
 </main>
 
