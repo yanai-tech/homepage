@@ -142,9 +142,8 @@ nav a:hover {
 /* オプション枠 */
 .flow-option{
   width: min(420px, 100%);
-  /* justify-self はグリッド外では効かないので削除 or 無視 */
-  /* justify-self: center; */
-  margin: 0 auto;           /* ★箱そのものを中央に */
+  justify-self: center;
+  margin: 0 center;           /* ★箱そのものを中央に */
   padding: 12px 16px;
   border-width: 2px;
 }
@@ -153,7 +152,7 @@ nav a:hover {
 @media (max-width: 920px){
   .flow-option{
     width: 100%;
-    margin: 0 auto;         /* 念のため明示 */
+    margin: 0 center;         /* 念のため明示 */
   }
 }
 
@@ -305,4 +304,5 @@ nav a:hover {
 @media (max-width: 560px){
   .price-grid-2{ grid-template-columns: 1fr; }
 }
+
 
