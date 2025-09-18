@@ -151,7 +151,7 @@ nav a:hover {
 @media (max-width: 920px){
   .flow-option{
     width: 100%;
-    justify-self: stretch;
+    justify-self: center;
   }
 }
 
